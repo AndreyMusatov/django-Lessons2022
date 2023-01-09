@@ -1,0 +1,21 @@
+{% extends 'mainapp/base.html' %}
+{% load static markdownify %}
+{% block content %}
+
+
+<div class="row">
+
+  <div class="col-lg-8">
+
+	<div class="card my-2">
+	  <div class="card-body">
+		<h5 class="card-title">{{object.title}}</h5>
+		<h6 class="card-subtitle mb-2 text-muted">{{object.data}}</h6>
+		<p class="card-text">{{object.preabmle}}</p>
+		<p class="card-text">{{object.body|markdownify}}</p>
+{#		<a href="#" class="card-link">Подробнее</a>#}
+	  </div>
+	</div>
+  </div>
+</div>
+{% endblock %}

@@ -1,4 +1,5 @@
-{% extends 'mainapp/base.html' %}        
+{% extends 'mainapp/base.html' %}
+{% load static markdownify %}
 {% block content %}
 		
 
@@ -10,8 +11,8 @@
 	  <div class="card-body">
 		<h5 class="card-title">{{news_item.title}}</h5>
 		<h6 class="card-subtitle mb-2 text-muted">{{news_item.data}}</h6>
-		<p class="card-text">{{news_item.preview}}</p>
-		<a href="#" class="card-link">Подробнее</a>
+		<p class="card-text">{{news_item.preabmle}}</p>
+		<a href="{% url 'mainapp:news_Detail' news_item.pk %}" class="card-link">Подробнее</a>
 	  </div>
 	</div>
 	{% endfor %}
