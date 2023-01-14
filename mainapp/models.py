@@ -110,4 +110,4 @@ class courseTeacher(models.Model):
 
     class Meta:
         verbose_name='курс к учителю'
-        verbose_name_plural='курсы к учетелям' 
+        verbose_name_plural='курсы к учетелям'

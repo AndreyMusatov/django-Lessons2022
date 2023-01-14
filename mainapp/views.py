@@ -49,7 +49,7 @@ class IndexView(TemplateView):
 
 
 class LoginView(TemplateView):
-    template_name = 'mainapp/login.html'
+    template_name = 'mainapp/../authapp/templates/authapp/login.html'
 
 
 class NewsView(TemplateView):
