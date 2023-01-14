@@ -1,0 +1,8 @@
+venv
+.idea
+__pychache__
+*.pyc
+env
+lesson_0_staticSite
+.git
+.vscode
